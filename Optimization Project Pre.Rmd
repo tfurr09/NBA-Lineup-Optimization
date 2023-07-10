@@ -1,0 +1,78 @@
+---
+title: "Untitled"
+output: html_document
+date: "2023-02-23"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+
+data <- read.csv("C:/Users/tfurr/OneDrive/Documents/Opt data.csv", header=TRUE)
+salaries <- read.csv("C:/Users/tfurr/OneDrive/Documents/Optimization Salaries.csv", header=TRUE)
+```
+
+```{r}
+head(data)
+
+head(salaries)
+```
+
+```{r}
+salaries <- salaries %>%
+  rename(PlayerID = X.9999)
+data <- data %>%
+  rename(PlayerID = Player..additional)
+head(salaries)
+head(data)
+```
+
+
+```{r}
+full_data <- merge(data, salaries, by = "PlayerID")
+head(full_data)
+```
+
+```{r}
+drop_cols <- c("Rk.x", "Tm.y", "Rk.y", "Player.y")
+full_data <- full_data %>% 
+  select(-one_of(drop_cols)) %>%
+  rename(Team = Tm.x) %>%
+  rename(Player = Player.x)
+head(full_data)
+summary(full_data)
+```
+
+```{r}
+data <- full_data
+data$X2022_23 <- str_replace_all(data$X2022_23, '\\$', '')
+data$X2022_23 <- str_replace_all(data$X2022_23, ",", "")
+data$X2023_24 <- str_replace_all(data$X2023_24, '\\$', '')
+data$X2023_24 <- str_replace_all(data$X2023_24, ",", "")
+data$X2024_25 <- str_replace_all(data$X2024_25, '\\$', '')
+data$X2024_25 <- str_replace_all(data$X2024_25, ",", "")
+data$X2025_26 <- str_replace_all(data$X2025_26, '\\$', '')
+data$X2025_26 <- str_replace_all(data$X2025_26, ",", "")
+data$X2026_27 <- str_replace_all(data$X2026_27, '\\$', '')
+data$X2026_27 <- str_replace_all(data$X2026_27, ",", "")
+data$X2027_28 <- str_replace_all(data$X2027_28, '\\$', '')
+data$X2027_28 <- str_replace_all(data$X2027_28, ",", "")
+data$Guaranteed <- str_replace_all(data$Guaranteed, '\\$', '')
+data$Guaranteed <- str_replace_all(data$Guaranteed, ",", "")
+data$X2022_23 <- as.numeric(data$X2022_23)
+data$X2023_24 <- as.numeric(data$X2023_24)
+data$X2024_25 <- as.numeric(data$X2024_25)
+data$X2025_26 <- as.numeric(data$X2025_26)
+data$X2026_27 <- as.numeric(data$X2026_27)
+data$X2027_28 <- as.numeric(data$X2027_28)
+data$Guaranteed <- as.numeric(data$Guaranteed)
+summary(data)
+```
+
+```{r}
+write.csv(data, "C:/Users/tfurr/OneDrive/Documents/optprojectdata.csv", row.names=FALSE)
+```
+
