@@ -1,0 +1,101 @@
+---
+title: "NBA Optimization Data Cleaning"
+output: html_document
+date: "2023-02-23"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+```
+
+```{r}
+datapath <- "Opt data.csv"
+data <- read.csv(datapath, header=TRUE)
+
+salarypath <- "Optimization Salaries.csv"
+salaries <- read.csv(salarypath, header=TRUE)
+```
+
+
+```{r}
+# Look at the two data frames
+head(data)
+
+head(salaries)
+```
+
+```{r}
+# The initial column for playerID in the salaries data frame is X.9999. In data this needs to be changed as well. 
+salaries <- salaries %>%
+  rename(PlayerID = X.9999)
+data <- data %>%
+  rename(PlayerID = Player..additional)
+
+# Check
+head(salaries)
+head(data)
+```
+
+
+```{r}
+# Merge on PlayerID
+full_data <- merge(data, salaries, by = "PlayerID")
+
+# Check
+# If a player doesn't have a salary, they are dropped. Essentially, if a player isn't in both data frames, they haven't played enough. We would filter them later anyway
+head(full_data)
+```
+
+```{r}
+# Drop columns that are duplicated. Also rename some that are kept
+drop_cols <- c("Rk.x", "Tm.y", "Rk.y", "Player.y")
+full_data <- full_data %>% 
+  select(-one_of(drop_cols)) %>%
+  rename(Team = Tm.x) %>%
+  rename(Player = Player.x)
+
+# Check
+head(full_data)
+summary(full_data)
+```
+
+```{r}
+# We need to get rid of the dollar signs in the salaries and change them to numeric
+
+data <- full_data
+data$X2022_23 <- str_replace_all(data$X2022_23, '\\$', '')
+data$X2022_23 <- str_replace_all(data$X2022_23, ",", "")
+data$X2023_24 <- str_replace_all(data$X2023_24, '\\$', '')
+data$X2023_24 <- str_replace_all(data$X2023_24, ",", "")
+data$X2024_25 <- str_replace_all(data$X2024_25, '\\$', '')
+data$X2024_25 <- str_replace_all(data$X2024_25, ",", "")
+data$X2025_26 <- str_replace_all(data$X2025_26, '\\$', '')
+data$X2025_26 <- str_replace_all(data$X2025_26, ",", "")
+data$X2026_27 <- str_replace_all(data$X2026_27, '\\$', '')
+data$X2026_27 <- str_replace_all(data$X2026_27, ",", "")
+data$X2027_28 <- str_replace_all(data$X2027_28, '\\$', '')
+data$X2027_28 <- str_replace_all(data$X2027_28, ",", "")
+data$Guaranteed <- str_replace_all(data$Guaranteed, '\\$', '')
+data$Guaranteed <- str_replace_all(data$Guaranteed, ",", "")
+data$X2022_23 <- as.numeric(data$X2022_23)
+data$X2023_24 <- as.numeric(data$X2023_24)
+data$X2024_25 <- as.numeric(data$X2024_25)
+data$X2025_26 <- as.numeric(data$X2025_26)
+data$X2026_27 <- as.numeric(data$X2026_27)
+data$X2027_28 <- as.numeric(data$X2027_28)
+data$Guaranteed <- as.numeric(data$Guaranteed)
+
+# Check
+summary(data)
+```
+
+```{r}
+# Write this new data to a csv for use in the project
+writepath <- "data.csv"
+write.csv(data, writepath, row.names=FALSE)
+```
+
