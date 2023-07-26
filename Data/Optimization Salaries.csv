@@ -10,7 +10,7 @@ Rk,Player,Tm,2022_23,2023_24,2024_25,2025_26,2026_27,2027_28,Guaranteed,-9999
 9,Alex Caruso,CHI,"$9,030,000 ","$9,460,000 ","$9,890,000 ",,,,"$28,380,000 ",carusal01
 10,Alex Len,SAC,"$3,918,600 ",,,,,,"$3,918,600 ",lenal01
 11,Alize Johnson,SAS,"$1,392,896 ",,,,,,"$1,392,896 ",johnsal02
-12,Alperen ?engün,HOU,"$3,375,360 ","$3,536,280 ","$5,424,654 ",,,,"$6,911,640 ",sengual01
+12,Alperen ?engÃ¼n,HOU,"$3,375,360 ","$3,536,280 ","$5,424,654 ",,,,"$6,911,640 ",sengual01
 13,Amir Coffey,LAC,"$3,395,062 ","$3,666,667 ","$3,938,271 ",,,,"$11,000,000 ",coffeam01
 14,Andre Drummond,CHI,"$3,200,000 ","$3,360,000 ",,,,,"$6,560,000 ",drumman01
 15,Andre Iguodala,GSW,"$1,836,090 ",,,,,,"$1,836,090 ",iguodan01
@@ -91,7 +91,7 @@ Rk,Player,Tm,2022_23,2023_24,2024_25,2025_26,2026_27,2027_28,Guaranteed,-9999
 90,Danny Green,CLE,"$11,710,528 ",,,,,,"$2,000,000 ",greenda02
 91,Danny Green,HOU,"$11,710,528 ",,,,,,"$9,710,528 ",greenda02
 92,Danuel House Jr.,PHI,"$4,105,000 ","$4,310,250 ",,,,,"$4,105,000 ",houseda01
-93,Dario Šari?,OKC,"$9,240,000 ",,,,,,"$9,240,000 ",saricda01
+93,Dario Å ari?,OKC,"$9,240,000 ",,,,,,"$9,240,000 ",saricda01
 94,Darius Bazley,PHO,"$4,264,629 ",,,,,,"$4,264,629 ",bazleda01
 95,Darius Garland,CLE,"$8,920,795 ","$33,250,000 ","$35,910,000 ","$38,570,000 ","$41,230,000 ","$43,890,000 ","$201,770,795 ",garlada01
 96,David Nwaba,OKC,"$5,022,000 ",,,,,,"$5,022,000 ",nwabada01
@@ -112,7 +112,7 @@ Rk,Player,Tm,2022_23,2023_24,2024_25,2025_26,2026_27,2027_28,Guaranteed,-9999
 111,DeMar DeRozan,CHI,"$27,300,000 ","$28,600,000 ",,,,,"$55,900,000 ",derozde01
 112,Demetrius Jackson,BOS,"$92,857 ","$92,857 ",,,,,"$185,714 ",jacksde01
 113,Deni Avdija,WAS,"$4,916,160 ","$6,263,188 ",,,,,"$11,179,348 ",avdijde01
-114,Dennis Schröder,LAL,"$1,836,090 ",,,,,,"$1,836,090 ",schrode01
+114,Dennis SchrÃ¶der,LAL,"$1,836,090 ",,,,,,"$1,836,090 ",schrode01
 115,Dennis Smith Jr.,CHO,"$1,836,090 ",,,,,,,smithde03
 116,Derrick Favors,HOU,"$10,183,800 ",,,,,,"$10,183,800 ",favorde01
 117,Derrick Jones Jr.,CHI,"$3,200,000 ","$3,360,000 ",,,,,"$3,200,000 ",jonesde02
@@ -259,7 +259,7 @@ Rk,Player,Tm,2022_23,2023_24,2024_25,2025_26,2026_27,2027_28,Guaranteed,-9999
 258,Jrue Holiday,MIL,"$33,665,040 ","$36,158,747 ","$38,652,454 ",,,,"$69,823,787 ",holidjr01
 259,JT Thor,CHO,"$1,563,518 ","$1,836,096 ","$1,988,598 ",,,,"$1,563,518 ",thorjt01
 260,Juan Toscano-Anderson,UTA,"$1,836,090 ",,,,,,"$1,836,090 ",toscaju01
-261,Juancho Hernangómez,TOR,"$1,836,090 ",,,,,,"$1,836,090 ",hernaju01
+261,Juancho HernangÃ³mez,TOR,"$1,836,090 ",,,,,,"$1,836,090 ",hernaju01
 262,Julius Randle,NYK,"$23,760,000 ","$25,660,800 ","$27,561,600 ","$29,462,400 ",,,"$76,982,400 ",randlju01
 263,Justin Holiday,HOU,"$6,292,440 ",,,,,,"$6,292,440 ",holidju01
 264,Justin Jackson,OKC,"$1,836,090 ",,,,,,,jacksju01
@@ -450,7 +450,7 @@ Rk,Player,Tm,2022_23,2023_24,2024_25,2025_26,2026_27,2027_28,Guaranteed,-9999
 449,Terry Taylor,IND,"$1,563,518 ",,,,,,"$1,563,518 ",taylote01
 450,Thaddeus Young,TOR,"$8,000,000 ","$8,000,000 ",,,,,"$9,000,000 ",youngth01
 451,Thanasis Antetokounmpo,MIL,"$1,878,720 ",,,,,,"$1,878,720 ",antetth01
-452,Théo Maledon,HOU,"$1,900,000 ",,,,,,"$1,900,000 ",maledth01
+452,ThÃ©o Maledon,HOU,"$1,900,000 ",,,,,,"$1,900,000 ",maledth01
 453,Theo Pinson,DAL,"$1,836,090 ",,,,,,"$1,836,090 ",pinsoth01
 454,Thomas Bryant,DEN,"$1,836,090 ",,,,,,"$1,836,090 ",bryanth01
 455,Tim Hardaway Jr.,DAL,"$19,602,273 ","$17,897,728 ","$16,193,183 ",,,,"$53,693,184 ",hardati02
@@ -486,7 +486,7 @@ Rk,Player,Tm,2022_23,2023_24,2024_25,2025_26,2026_27,2027_28,Guaranteed,-9999
 485,Wenyen Gabriel,LAL,"$1,878,720 ",,,,,,"$1,878,720 ",gabriwe01
 486,Wesley Matthews,MIL,"$1,836,090 ",,,,,,"$1,836,090 ",matthwe02
 487,Will Barton,WAS,"$14,375,000 ",,,,,,"$14,375,000 ",bartowi01
-488,Willy Hernangómez,NOP,"$2,443,581 ","$2,559,942 ",,,,,"$2,443,581 ",hernawi01
+488,Willy HernangÃ³mez,NOP,"$2,443,581 ","$2,559,942 ",,,,,"$2,443,581 ",hernawi01
 489,Xavier Tillman Sr.,MEM,"$1,782,621 ","$1,930,681 ",,,,,"$1,782,621 ",tillmxa01
 490,Yuta Watanabe,BRK,"$1,836,090 ",,,,,,,watanyu01
 491,Zach Collins,SAS,"$7,350,000 ","$7,700,000 ",,,,,"$7,350,000 ",colliza01
